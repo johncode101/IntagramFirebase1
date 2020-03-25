@@ -9,8 +9,7 @@
 import UIKit
 import Firebase
 
-
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SignUpController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
@@ -18,8 +17,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         button.addTarget(self, action: #selector(handlePlusPhoto), for: .touchUpInside)
         return button
     }()
-    
-    // this  lines of code set up the handlePlusPhoto for the plusPhotoButton
     
     @objc func handlePlusPhoto() {
         let imagePickerController = UIImagePickerController()
@@ -29,10 +26,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         present(imagePickerController, animated: true, completion: nil)
     }
     
-    // This function make the app set the style and functionality of the photo selected.
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        
         if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             plusPhotoButton.setImage(editedImage.withRenderingMode(.alwaysOriginal), for: .normal)
         } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
@@ -44,7 +38,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         plusPhotoButton.layer.borderColor = UIColor.black.cgColor
         plusPhotoButton.layer.borderWidth = 3
         
-        //this line of code simply dismisses the photo selection.
         dismiss(animated: true, completion: nil)
     }
     
@@ -123,8 +116,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             print("Successfully created user:", user?.user.uid ?? "")
             
-            // This lines of code will upload the photo's info on to firebase.
-            
             guard let image = self.plusPhotoButton.imageView?.image else { return }
             
             guard let uploadData = image.jpegData(compressionQuality: 0.3) else { return }
@@ -152,8 +143,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     
                     guard let uid = user?.user.uid else { return }
                     
-                    // This line is just the format to save the users username along with the URL.
-                    
                     let dictionaryValues = ["username": username, "profileImageUrl": profileImageUrl]
                     let values = [uid: dictionaryValues]
                     
@@ -166,6 +155,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                         
                         print("Successfully saved user info to db")
                         
+                        guard let mainTabBarController = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController else { return }
+                        
+                        mainTabBarController.setupViewControllers()
+                        
+                        self.dismiss(animated: true, completion: nil)
+                        
                     })
                 })
             })
@@ -173,8 +168,31 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         })
     }
     
+    let alreadyHaveAccountButton: UIButton = {
+        let button = UIButton(type: .system)
+        
+        let attributedTitle = NSMutableAttributedString(string: "Already have an account?  ", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.lightGray])
+        
+        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 17, green: 154, blue: 237)
+            ]))
+        
+        button.setAttributedTitle(attributedTitle, for: .normal)
+        
+        button.addTarget(self, action: #selector(handleAlreadyHaveAccount), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc func handleAlreadyHaveAccount() {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(alreadyHaveAccountButton)
+        alreadyHaveAccountButton.anchor(top: nil, left: view.leftAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 50)
+        
+        view.backgroundColor = .white
         
         view.addSubview(plusPhotoButton)
         

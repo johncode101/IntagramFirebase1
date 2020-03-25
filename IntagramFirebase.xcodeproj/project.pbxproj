@@ -3,31 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4FB27B62D68D6C824BA0C7C5 /* Pods_IntagramFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83392F6A093880DA4B176FA6 /* Pods_IntagramFirebase.framework */; };
+		5522FA3623C7A73F006EDB5D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522FA3523C7A73F006EDB5D /* LoginController.swift */; };
+		553665A023B63238001C26E9 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536659F23B63238001C26E9 /* MainTabBarController.swift */; };
+		553665A223B63261001C26E9 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553665A123B63261001C26E9 /* UserProfileController.swift */; };
+		5541287E23F60E38004F4E4C /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541287D23F60E38004F4E4C /* PhotoSelectorController.swift */; };
+		5541288023F620A3004F4E4C /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5541287F23F620A3004F4E4C /* PhotoSelectorCell.swift */; };
 		55701C1623B0D91300734299 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55701C1523B0D91300734299 /* Extensions.swift */; };
 		55701C1823B0EAF500734299 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55701C1723B0EAF500734299 /* GoogleService-Info.plist */; };
+		559305D523BF77F000477D7C /* UserProfilelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559305D423BF77F000477D7C /* UserProfilelHeader.swift */; };
 		55DCCDF923ACDFC100E23659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DCCDF823ACDFC100E23659 /* AppDelegate.swift */; };
-		55DCCDFB23ACDFC100E23659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DCCDFA23ACDFC100E23659 /* ViewController.swift */; };
+		55DCCDFB23ACDFC100E23659 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DCCDFA23ACDFC100E23659 /* SignUpController.swift */; };
 		55DCCDFE23ACDFC100E23659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DCCDFC23ACDFC100E23659 /* Main.storyboard */; };
 		55DCCE0023ACDFC300E23659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DCCDFF23ACDFC300E23659 /* Assets.xcassets */; };
 		55DCCE0323ACDFC300E23659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DCCE0123ACDFC300E23659 /* LaunchScreen.storyboard */; };
+		55F5383C2410ABC3001E510B /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F5383B2410ABC3001E510B /* PhotoSelectorHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25F260F3565A2F6235E08956 /* Pods-IntagramFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntagramFirebase.debug.xcconfig"; path = "Target Support Files/Pods-IntagramFirebase/Pods-IntagramFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		5522FA3523C7A73F006EDB5D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5536659F23B63238001C26E9 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		553665A123B63261001C26E9 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		5541287D23F60E38004F4E4C /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		5541287F23F620A3004F4E4C /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		55701C1523B0D91300734299 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		55701C1723B0EAF500734299 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		559305D423BF77F000477D7C /* UserProfilelHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfilelHeader.swift; sourceTree = "<group>"; };
 		55DCCDF523ACDFC100E23659 /* IntagramFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntagramFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DCCDF823ACDFC100E23659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55DCCDFA23ACDFC100E23659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55DCCDFA23ACDFC100E23659 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		55DCCDFD23ACDFC100E23659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55DCCDFF23ACDFC300E23659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55DCCE0223ACDFC300E23659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55DCCE0423ACDFC300E23659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F5383B2410ABC3001E510B /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoSelectorHeader.swift; path = IntagramFirebase/PhotoSelectorHeader.swift; sourceTree = SOURCE_ROOT; };
 		83392F6A093880DA4B176FA6 /* Pods_IntagramFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntagramFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886D6906FB2C88D616363A70 /* Pods-IntagramFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntagramFirebase.release.xcconfig"; path = "Target Support Files/Pods-IntagramFirebase/Pods-IntagramFirebase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -44,12 +58,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5522FA3423C7A710006EDB5D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5522FA3523C7A73F006EDB5D /* LoginController.swift */,
+				55DCCDFA23ACDFC100E23659 /* SignUpController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5541287C23F60E1A004F4E4C /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				5541287D23F60E38004F4E4C /* PhotoSelectorController.swift */,
+				5541287F23F620A3004F4E4C /* PhotoSelectorCell.swift */,
+				55F5383B2410ABC3001E510B /* PhotoSelectorHeader.swift */,
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
 		55701C1423B0D8E900734299 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				55701C1523B0D91300734299 /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		559305D323BF779900477D7C /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				553665A123B63261001C26E9 /* UserProfileController.swift */,
+				559305D423BF77F000477D7C /* UserProfilelHeader.swift */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		55DCCDEC23ACDFC100E23659 = {
@@ -73,9 +115,12 @@
 		55DCCDF723ACDFC100E23659 /* IntagramFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				5541287C23F60E1A004F4E4C /* AddPhoto */,
+				5522FA3423C7A710006EDB5D /* Login */,
+				559305D323BF779900477D7C /* UserProfile */,
 				55701C1423B0D8E900734299 /* Utils */,
 				55DCCDF823ACDFC100E23659 /* AppDelegate.swift */,
-				55DCCDFA23ACDFC100E23659 /* ViewController.swift */,
+				5536659F23B63238001C26E9 /* MainTabBarController.swift */,
 				55DCCDFC23ACDFC100E23659 /* Main.storyboard */,
 				55DCCDFF23ACDFC300E23659 /* Assets.xcassets */,
 				55DCCE0123ACDFC300E23659 /* LaunchScreen.storyboard */,
@@ -91,7 +136,6 @@
 				25F260F3565A2F6235E08956 /* Pods-IntagramFirebase.debug.xcconfig */,
 				886D6906FB2C88D616363A70 /* Pods-IntagramFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -219,9 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DCCDFB23ACDFC100E23659 /* ViewController.swift in Sources */,
+				559305D523BF77F000477D7C /* UserProfilelHeader.swift in Sources */,
+				5541288023F620A3004F4E4C /* PhotoSelectorCell.swift in Sources */,
+				55DCCDFB23ACDFC100E23659 /* SignUpController.swift in Sources */,
 				55701C1623B0D91300734299 /* Extensions.swift in Sources */,
+				553665A023B63238001C26E9 /* MainTabBarController.swift in Sources */,
+				553665A223B63261001C26E9 /* UserProfileController.swift in Sources */,
 				55DCCDF923ACDFC100E23659 /* AppDelegate.swift in Sources */,
+				5522FA3623C7A73F006EDB5D /* LoginController.swift in Sources */,
+				55F5383C2410ABC3001E510B /* PhotoSelectorHeader.swift in Sources */,
+				5541287E23F60E38004F4E4C /* PhotoSelectorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
